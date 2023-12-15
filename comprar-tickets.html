@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS & Propio-->
+    <link href="/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mystyle.css">
+
+    
+    <title>Comprar Tickets - Grupo 10 - Tp Integrador </title>
+</head>
+<body>
+    <!--  Barra de navegacion  -->
+
+    <div class="container-fluid bg-dark">
+        <nav class="navbar navbar-dark  navbar-expand-lg ">
+            <div class="container ">
+              <a class="navbar-brand " href="index.html">
+                <img class="img-fluid LogoCAC" src="./img/codoacodo.png" alt="">
+                Conf Bs As
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+    
+                <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html#conferencia">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#oradores">Los oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#lugarFecha">El lugar y la fecha</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#formulario">Conviértete en orador</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#">Comprar tickets</a>
+                  </li>
+                  
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+    
+        </div>
+
+        <!--- Categorias ---->
+
+        <div class="container">
+
+          <div class="row mt-5 justify-content-center">
+
+
+            <div class="col-10 col-md-3 border border-primary text-center mb-2">
+              <p class="pt-3">
+                <strong>Estudiante</strong><br>
+                Tienen un descuento <br>
+                <b>80%</b><br>
+                <span class="text-secondary">*presentar documentación</span>
+              </p>
+            </div>
+
+            <div class="col-10 col-md-3 mx-2  border border-success text-center mb-2">
+              <p class="pt-3">
+                <strong>Trainee</strong><br>
+                Tienen un descuento <br>
+                <b>50%</b><br>
+                <span class="text-secondary">*presentar documentación</span>
+              </p>
+            </div>
+
+            <div class="col-10 col-md-3 border border-warning text-center mb-2">
+              <p class="pt-3">
+                <strong>Junior</strong><br>
+                Tienen un descuento <br>
+                <b>15%</b><br>
+                <span class="text-secondary">*presentar documentación</span>
+              </p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+    <!--- Form Comprar tickets ---> 
+
+    <div class="container mt-2">
+
+<p class="text-center"><span class="w-100">VENTA</span><br>
+  
+  <b class="fs-1">VALOR DE TICKET $200</b></p>
+
+      <div class="row justify-content-center">
+
+
+        <form id="miFormulario" class="col-12 col-md-10 my-2">
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido">
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+          </div>
+          <div class="row ">
+          <div class="col-6 mb-3">
+            <label for="number" class="form-label">Cantidad</label>
+            <input id="number" type="number" class="form-control" placeholder="Cantidad" min="0">
+          </div>
+          <div class="col-6 mb-3">
+            <label for="categoria" class="form-label">Categoría</label>
+            <select class="form-select" id="categoria">
+              <option selected>Selecciona una categoría</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+            </select>
+          </div>
+        </div>
+
+        
+        <div class="mb-3 alert alert-primary" role="alert">
+          Total a Pagar: $<input id="totalAPagar" type="text" value="0" disabled>
+        </div>
+
+          <div class="mb-3">
+            <button type="reset" class="btn btn-secondary me-2">Borrar</button>
+            <button onclick="clickResumen()" id="resumen" type="submit" class="btn btn-primary">Resumen</button>
+          </div>
+
+
+        </form>
+
+      </div>
+      </div>
+
+ 
+
+
+
+    <!--  Footer  -->
+
+    
+    <footer id="main-footer">
+        <div class="container">
+            <ul class="nav justify-content-center justify-content-lg-between align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Preguntas <span>frecuentes</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Términos y <span>condiciones</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+  
+  
+  
+  
+      <!-- Scripts -->
+      <script src="./js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+      <script src="./js/comprarTicket.js"></script>
+
+</body>
+</html>
