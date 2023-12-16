@@ -27,7 +27,7 @@ function clickCharla() {
     let temaCharlaValor = temaCharla.options[temaCharla.selectedIndex].text;
   
     if (nombreValor === '' || apellidoValor === '' || temaCharlaValor === '¿Selecciona el tema de tú charla?' || dniValor.length < 7 || dniValor.length > 8) {
-      alert('Por favor, completa todos los campos.');
+      alert('Por favor, completa todos los campos y recuerda que el Dni tiene que tener entre 7 a 8 caracteres(numeros).');
       return;
     }
   
