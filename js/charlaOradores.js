@@ -23,12 +23,14 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
 function clickCharla() {
     let nombreValor = nombre.value.trim();
     let apellidoValor = apellido.value.trim();
+    let dniValor = dni.value.trim();
     let temaCharlaValor = temaCharla.options[temaCharla.selectedIndex].text;
   
-    if (nombreValor === '' || apellidoValor === '' || temaCharlaValor === '¿Selecciona el tema de tú charla?') {
+    if (nombreValor === '' || apellidoValor === '' || temaCharlaValor === '¿Selecciona el tema de tú charla?' || dniValor.length < 7 || dniValor.length > 8) {
       alert('Por favor, completa todos los campos.');
       return;
     }
+  
   
     let divCharla = document.createElement('div');
     divCharla.classList.add('card', 'mb-3');
