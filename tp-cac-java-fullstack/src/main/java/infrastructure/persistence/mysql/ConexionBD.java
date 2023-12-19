@@ -19,7 +19,7 @@ public class ConexionBD {
 		String host = "localhost";
 		String port = "3306";
 		String username = "root";
-		String password = "lu3fv10RV-.";
+		String password = "admin";
 		
 		String nombredb = "tpfinalcac";
 		String driveClassName = "com.mysql.cj.jdbc.Driver";
