@@ -1,0 +1,57 @@
+package infrastructure.persistence.mysql;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConexionBD {
+	
+	
+	
+	// Driver de conexión a la base de datos
+	
+	
+	
+	
+	public static Connection getConnection() {
+		
+		Connection connection = null;
+		String host = "localhost";
+		String port = "3306";
+		String username = "root";
+		String password = "lu3fv10RV-.";
+		
+		String nombredb = "tpfinalcac";
+		String driveClassName = "com.mysql.cj.jdbc.Driver";
+		
+		try {
+			Class.forName(driveClassName);
+			// url de conexión
+			
+			String url = "jdbc:mysql://" + host + ":" + port + "/" + nombredb;
+			
+			connection = DriverManager.getConnection(url, username, password);
+			
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return connection;
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

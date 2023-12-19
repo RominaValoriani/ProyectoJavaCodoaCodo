@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS & Propio-->
+    <link href="css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+    <title>Grupo 10 - TP Integrador </title>
+  </head>
+  <body>
+
+    <!--  Barra de navegacion  -->
+
+    <div class="container-fluid bg-dark">
+    <nav class="navbar navbar-dark  navbar-expand-lg ">
+        <div class="container ">
+          <a class="navbar-brand " href="#">
+            <img class="img-fluid LogoCAC" src="./img/codoacodo.png" alt="">
+            Conf Bs As
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+
+            <ul class="navbar-nav justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oradores">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugarFecha">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formulario">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="comprar-tickets.html">Comprar tickets</a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+    <!--  Portada  -->
+
+    <div id="conferencia" class="container-fluid portada d-flex align-items-center">
+        <div class=" row justify-content-end ">
+
+            <div class="col-md-6 pe-5 text-end text-white   ">
+                
+                <h2 >Conf Bs As</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos nesciunt expedita cum animi ea esse fuga accusamus corrupti adipisci autem ab, enim explicabo quibusdam? Quasi ex repudiandae illum inventore?</p>
+                <a href="#" class="btn btn-white-border">Quiero ser orador</a>
+                <a href="#" class="btn btn-success">Comprar tickets</a>
+            
+        </div>
+        </div>
+    </div>
+
+
+    <!--  Oradores  -->
+
+    <div id="oradores" class="container mt-3">
+        <div class="text-center">
+            <p>CONOCE A LOS <br> <span class="h2">ORADORES</span></p>
+        </div>
+        <div class="row justify-content-evenly">
+
+            <div class="col-lg-4 col-md-12">
+                
+                <div class="card m-auto mb-3" style="width: 18rem;">
+                    <img src="./img/steve.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><span class="bg-warning spanCategorias">JavaScript</span> <span class="bg-info text-white spanCategorias">React</span></p>
+                      <h5 class="card-title">Steve Jobs</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nemo nisi quis sapiente, alias quibusdam neque voluptate harum, nam eius et quia dolores sequi, architecto impedit quos laudantium officiis ipsum.</p>
+                      
+                    </div>
+                  </div>
+
+            </div>
+            
+            <div class="col-lg-4 col-md-12">
+                
+                <div class="card m-auto mb-3" style="width: 18rem;">
+                    <img src="./img/bill.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><span class="bg-warning spanCategorias">JavaScript</span> <span class="bg-info text-white spanCategorias">React</span></p>
+                      <h5 class="card-title">Bill Gates</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nemo nisi quis sapiente, alias quibusdam neque voluptate harum, nam eius et quia dolores sequi, architecto impedit quos laudantium officiis ipsum.</p>
+                      
+                    </div>
+                  </div>
+
+            </div>
+            
+            <div class="col-lg-4 col-md-12">
+                
+                <div class="card m-auto mb-4" style="width: 18rem;">
+                    <img src="./img/ada.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p><span class="bg-secondary text-white spanCategorias">Negocios</span> <span class="bg-danger text-white spanCategorias">Startups</span></p>
+                      <h5 class="card-title">Ada Lovelace</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas nemo nisi quis sapiente, alias quibusdam neque voluptate harum, nam eius et quia dolores sequi, architecto impedit quos laudantium officiis ipsum.</p>
+                      
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!--  Modulo 2 col-6  -->
+<div id="lugarFecha" class="container-fluid">
+
+    <div class="row bg-dark text-white">
+
+        <div class="col-md-6 col-12 imgOctubre"></div>
+        <div class="col-md-6 col-12 p-5"><h2>Bs As - Octubre</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, accusamus nesciunt dolores soluta atque, minima asperiores explicabo laboriosam tempora obcaecati, veniam facere velit. Nam quo, et delectus magni molestiae omnis?</p>
+        <a class="btn btn-white-border" href="#">Conocé más</a></div>
+
+    </div>
+
+</div>
+
+
+    <!--  Formulario  -->
+
+    <div id="formulario" class="container-fluid">
+        <div class="text-center mt-3">
+            <p>CONVIÉRTETE EN UN<br><span class="h2">ORADOR</span></p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="w-75">
+                <p class="text-center">Anótate como orador para dar una <a href="#">charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
+    
+                <form id="miFormulario" class="row justify-content-between" action="endpoint" method="post">
+                    <div class="col-12 col-md-6 mt-3">
+                        <input id="nombre" class="form-control" type="text" placeholder="Nombre" name="nombreInput">
+                    </div>
+                    <div class="col-12 col-md-6 mt-3">
+                        <input id="apellido" class="form-control" type="text" placeholder="Apellido" name="apellidoInput">
+                    </div>
+
+
+                    <div class="col-12 col-md-6 mt-3">
+                      <input id="email" class="form-control" type="email" placeholder="Correo electrónico" name="emailInput">
+                  </div>
+                  <div class="col-12 col-md-6 mt-3">
+                    
+                      <input id="dni" class="form-control" name="dniInput" type="text" placeholder="DNI" pattern="\d{7,8}" title="El DNI debe tener entre 7 y 8 dígitos" required>
+
+                  </div>
+             
+                    <div class="col-12 mt-3">
+                                             
+                      
+                        <select  class="form-select" id="temaCharla" name="temaCharlaInput">
+                          <option selected>¿Selecciona el tema de tú charla?</option>
+                          <option value="tecnologia">Tecnología</option>
+                          <option value="innovacion">Innovación</option>
+                          <option value="inteligencia_artificial">Inteligencia Artificial</option>
+                        </select>
+</div>
+<div class="col-12 mt-3">
+
+                        <a class="d-block btn btn-lg btn-formulario" onclick="clickCharla()" >Cargar charla</a>
+                    </div>
+                </form>
+
+<div id="contenedorCharlas">
+
+<!---charlas cargadas plantilla
+<div class="card mb-3">
+  <div class="card-header h5">
+    Nombre Apellido
+  </div>
+  <div class="card-body">
+    <p class="card-text">Tema a charlar</p>
+    <a href="#" class="btn btn-warning">Editar</a> <a href="#" class="btn btn-danger">Eliminar</a>
+  </div>
+</div>
+ -->
+
+
+</div>
+
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <!--  Footer  -->
+
+    
+    <footer id="main-footer">
+      <div class="container">
+          <ul class="nav justify-content-center justify-content-lg-between align-items-center">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Preguntas <span>frecuentes</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Prensa</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Términos y <span>condiciones</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Privacidad</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Estudiantes</a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+
+
+
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="js/charlaOradores.js"></script>
+
+  
+    
+  </body>
+</html>
